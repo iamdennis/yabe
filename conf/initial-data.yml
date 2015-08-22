@@ -1,0 +1,61 @@
+# Test data
+
+User(test):
+    email:          test@gmail.com
+    password:       test
+    fullName:       test
+    isAdmin:        true
+
+User(jeff):
+    email:          jeff@gmail.com
+    password:       secret
+    fullName:       Jeff
+
+Post(firsttestPost):
+    title:          Opinion on Createx
+    postedAt:       2009-06-14
+    author:         test
+    content:        >
+                    I did a quick search and saw that createx isn't tremendously highly recommended.
+                    However, I can get it extremely cheap and therefore would like to use it if I can. Either the regular, wicked, or auto-air.
+                    In searching I saw someone who said regular createx doesn't stick well, would using their illustration base help that?
+
+Post(secondtestPost):
+    title:          Just a test of YABE
+    postedAt:       2009-03-25
+    author:         test
+    content:        >
+                    Well, it's just a test.
+
+Post(jeffPost):
+    title:          The MVC application
+    postedAt:       2009-06-06
+    author:         jeff
+    content:        >
+                    A Play! application follows the MVC architectural pattern as applied to the
+                    architecture of the Web.
+
+                    This pattern splits the application into separate layers: the Presentation
+                    layer and the Model layer. The Presentation layer is further split into a
+                    View and a Controller layer.
+
+Comment(c1):
+    author:         Guest
+    content:        >
+                    You are right !
+    postedAt:       2009-06-14
+    post:           firsttestPost
+
+Comment(c2):
+    author:         Mike
+    content:        >
+                    I knew that ...
+    postedAt:       2009-06-15
+    post:           firsttestPost
+
+Comment(c3):
+    author:         Tom
+    content:        >
+                    This post is useless ?
+    postedAt:       2009-04-05
+    post:           secondtestPost
